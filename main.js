@@ -3,10 +3,10 @@
 
 // Vaptcha Load
 var v = document.createElement("script")
-v.SetAttribute("src","https://code.jquery.com/jquery-3.6.1.min.js")
+v.setAttribute("src","https://code.jquery.com/jquery-3.6.1.min.js")
 document.getElementsByTagName("body")[0].appendChild(v)
 var z = document.createElement("script")
-z.SetAttribute("src","https://v-cn.vaptcha.com/v3.js")
+z.setAttribute("src","https://v-cn.vaptcha.com/v3.js")
 document.getElementsByTagName("body")[0].appendChild(z)
 
 //window.VAPTCHABotCheck.status = false;
