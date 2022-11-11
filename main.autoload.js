@@ -8,7 +8,7 @@ document.getElementsByTagName("body")[0].appendChild(v)
 var z = document.createElement("script")
 z.setAttribute("src","https://v-cn.vaptcha.com/v3.js")
 document.getElementsByTagName("body")[0].appendChild(z)
-
+window.isDoneVaptcha=true;
 //window.VAPTCHABotCheck.status = false;
 //window.VAPTCHABotCheck.data = null;
 // Vaptcha UI
@@ -37,6 +37,7 @@ var i=setInterval(function(){
                 //window.VAPTCHABotCheck.status = true;
                 //window.VAPTCHABotCheck.data = data;
                 window.postMessage(data)
+                window.isDoneVaptcha=true;
             })
         })
         clearInterval(i)}
