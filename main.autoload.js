@@ -14,6 +14,7 @@ document.getElementsByTagName("body")[0].appendChild(z)
 // Vaptcha UI
 var i=setInterval(function(){
     if(vaptcha){clearInterval(i)}
+    console.log(1)
 },1000)
 
 
