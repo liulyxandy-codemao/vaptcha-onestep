@@ -31,6 +31,7 @@ vaptcha({
         }
         //window.VAPTCHABotCheck.status = true;
         //window.VAPTCHABotCheck.data = data;
+        window.postMessage(data)
     })
 })}
 load()
