@@ -11,9 +11,12 @@ document.getElementsByTagName("body")[0].appendChild(z)
 
 //window.VAPTCHABotCheck.status = false;
 //window.VAPTCHABotCheck.data = null;
-
 // Vaptcha UI
-function load(){
+var i=setInterval(function(){
+    if(vaptcha){clearInterval(i)}
+},1000)
+
+
 vaptcha({
     vid: '636e1f68cdf7d074d80a484d',
     mode: 'click',
@@ -38,6 +41,4 @@ vaptcha({
         //window.VAPTCHABotCheck.data = data;
         window.postMessage(data)
     })
-})}
-
-setTimeout(load(), 1000 )
+})
