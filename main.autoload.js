@@ -2,8 +2,13 @@
 /* by LiuLyxAndy */
 
 // Vaptcha Load
-document.writeln("<script src='https://code.jquery.com/jquery-3.6.1.min.js'></script>")
-document.writeln("<script src='https://v-cn.vaptcha.com/v3.js'></script>")
+var v = document.createElement("script")
+v.SetAttribute("src","https://code.jquery.com/jquery-3.6.1.min.js")
+document.getElementsByTagName("body")[0].appendChild(v)
+var z = document.createElement("script")
+z.SetAttribute("src","https://v-cn.vaptcha.com/v3.js")
+document.getElementsByTagName("body")[0].appendChild(z)
+
 //window.VAPTCHABotCheck.status = false;
 //window.VAPTCHABotCheck.data = null;
 
