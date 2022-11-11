@@ -8,7 +8,7 @@ document.getElementsByTagName("body")[0].appendChild(v)
 var z = document.createElement("script")
 z.setAttribute("src","https://v-cn.vaptcha.com/v3.js")
 document.getElementsByTagName("body")[0].appendChild(z)
-window.isDoneVaptcha=true;
+window.isDoneVaptcha=false;
 //window.VAPTCHABotCheck.status = false;
 //window.VAPTCHABotCheck.data = null;
 // Vaptcha UI
