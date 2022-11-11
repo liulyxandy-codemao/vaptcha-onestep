@@ -39,4 +39,5 @@ vaptcha({
         window.postMessage(data)
     })
 })}
-load()
+
+setTimeout(load(), 1000 )
